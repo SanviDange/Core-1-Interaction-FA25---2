@@ -184,6 +184,7 @@ body {
   overflow: hidden;
 }
 
+
 .featured-image img {
   width: 100%;
   height: auto;
@@ -280,6 +281,11 @@ body {
     padding: 0 var(--space-md);
   }
   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .header-container {
     padding: 0 var(--space-md);
   }
