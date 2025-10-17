@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
   --color-primary: rgb(0, 0, 0);      
@@ -18,11 +18,13 @@
   --gray-800: #1F2937;
   --gray-900: #111827;
   
-  --font-heading: "DM Sans", sans-serif;
+  --font-heading: "EB Garamond", serif;
   --font-body: "Inter", sans-serif;
+
 }
 
 /* === BASE STYLES === */
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +37,7 @@ body {
   line-height: 1.6;
   color: var(--gray-800);
   background-color: var(--gray-100);
+  background-color: #FFFFF0;
 }
 
 p {
@@ -55,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 h2 {
@@ -72,37 +76,41 @@ img {
   margin: 1rem 0;
 }
 
+
 /* === DEFAULT LAYOUT === */
 main {
-  padding: 2rem;
-  margin: 0;
+  padding: 0 0 0 1rem;
+  margin: 0 0 0 2rem;
   max-width: 60vw;
 }
 
 section {
   background-color: transparent;
-  padding: 2rem;
+  padding: 0 1rem;
   margin-bottom: 2rem;
+}
+
+.intro {
+    background-color:transparent ;
+    max-width: 80vw;
+    margin: 0;
+
 }
 
 /* === TWO COLUMN LAYOUT === */
 main.two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0;
   gap: 2rem;
   max-width: 80vw;
 }
 
 main.two-column section {
   margin: 0;
+  padding: 0 0 0 0;
 }
 
-.intro {
-    background-color: transparent;
-    max-width: 80vw;
-    margin: 0;
-
-}
 
 /* === THREE COLUMN LAYOUT === */
 main.three-column {
@@ -126,7 +134,7 @@ main.three-column h3 {
 main.medium-style {
   display: block;
   max-width: 680px;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem 0 0;
 }
 
 main.medium-style section {
