@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: rgb(0, 0, 0);      
-  --color-secondary: #9a0000;    
+  --color-secondary: #9b0000;    
   --color-accent: #DAA520;       
   --color-tertiary: #A0522D;
   --color-highlight: #CD853F;  
@@ -35,9 +35,9 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
-  color: var(--gray-800);
+  color: var(--gray-700);
   background-color: var(--gray-100);
-  background-color: #FFFFF0;
+  background-color: #F2F1ED;
 }
 
 p {
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   margin-bottom: 1rem;
 }
 
