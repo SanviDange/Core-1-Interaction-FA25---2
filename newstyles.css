@@ -123,7 +123,7 @@ section {
 main.two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0;
+  padding: 0 0 0 10rem;
   gap: 2rem;
   max-width: 80vw;
 }
@@ -155,8 +155,8 @@ main.three-column h3 {
 /* === MEDIUM STYLE LAYOUT === */
 main.medium-style {
   display: block;
-  max-width: 680px;
-  padding: 1rem 2rem 0 0;
+  max-width:fit-content ;
+  padding: 1rem 10rem 0 10rem;
 }
 
 main.medium-style section {
