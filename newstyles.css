@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  @import url("https://use.typekit.net/egt8bpj.css");
 
 :root {
   --color-primary: rgb(0, 0, 0);      
-  --color-secondary: #9b0000;    
-  --color-accent: #DAA520;       
+  --color-secondary: #9b0000;   
+  --color-two: #840505;  
+  --color-accent: #c39603;       
   --color-tertiary: #A0522D;
   --color-highlight: #CD853F;  
   
@@ -18,8 +19,9 @@
   --gray-800: #1F2937;
   --gray-900: #111827;
   
-  --font-heading: "DM Sans", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: "spalla", sans-serif;
+  --font-subheading: "inter-variable", sans-serif;
+  --font-body: "inter-variable", sans-serif;
 
 }
 
@@ -37,7 +39,7 @@ body {
   line-height: 1.6;
   color: var(--gray-700);
   background-color: var(--gray-100);
-  background-color: #F2F1ED;
+  background-color: #F5F3EE;
 }
 
 p {
@@ -48,7 +50,7 @@ p {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
@@ -56,8 +58,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-two);
+  margin-bottom: 1rem;
+}
+
+ h4 {
+  font-family: var(--font-subheading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-accent);
+  margin-bottom: 0;
+}
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-top: 3rem;
 }
 
@@ -67,6 +85,10 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 img {
@@ -175,13 +197,18 @@ main.medium-style img {
 main.photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 1rem;
+  max-width: 100%;
+  padding: 3rem;
+  padding-left: 1rem;
+  background-color: transparent;
 }
 
 main.photo-grid .photo-item {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -197,13 +224,13 @@ main.photo-grid .photo-name {
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 0.5rem;
-  font-size: 1.125rem;
+  font-size: 3rem;
 }
 
 main.photo-grid .photo-caption {
   font-family: var(--font-body);
   font-weight: 400;
-  color: var(--gray-700);
+  color: var(--gray-800);
   font-size: 0.9rem;
   line-height: 1.4;
   margin: 0;
