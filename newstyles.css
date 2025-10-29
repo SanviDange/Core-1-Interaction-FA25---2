@@ -210,6 +210,9 @@ main.photo-grid .photo-item {
   background-color: rgb(255, 255, 255);
   padding: 1.5rem;
   text-align: center;
+  width: 240px;
+  height: 336px;
+  border-radius: 12px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -236,6 +239,73 @@ main.photo-grid .photo-caption {
   font-size: 0.9rem;
   line-height: 1.4;
   margin: 0;
+}
+
+/*=== ANIMATION ===*/
+.photo-item {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.front {
+  background: white;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.back {
+  background: #800000;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+/*=== ACCORDIAN === */
+.accordion-container {
+  width: 100%;
+  margin: auto;
+  border: 1px solid  #F5F3EE;
+}
+
+details {
+  border-bottom: 1px solid #eee;
+  font-family: var(--font-heading);
+  color: var(--color-secondary);
+}
+
+summary {
+  padding: 15px 15px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 15px 15px;
+  background-color:transparent;
 }
 
 /* === RESPONSIVE BREAKPOINTS === */
