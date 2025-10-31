@@ -7,6 +7,7 @@
   --color-accent: #c39603;       
   --color-tertiary: #A0522D;
   --color-highlight: #CD853F;  
+  --color-base: #F5F3EE;
   
   --gray-50: #F9FAFB;
   --gray-100: #F3F4F6;
@@ -25,6 +26,11 @@
 
 }
 
+/* === BACKGROUND === */
+Body{
+  background-color: #f5f3ee;
+  background-image: url(http://www.transparenttextures.com/patterns/natural-paper.png);
+}
 /* === BASE STYLES === */
 
 * {
@@ -118,6 +124,12 @@ section {
     margin: 0;
 
 }
+
+/*body{
+  background:
+  radial-gradient(ellipse at top, #07543b, transparent),
+  radial-gradient(ellipse at bottom, #F5F3EE, transparent); } */
+  
 
 /* === TWO COLUMN LAYOUT === */
 main.two-column {
