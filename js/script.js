@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
     
-    // Reading Progress Indicator
+    // Reading Progress Indicator 
     function updateReadingProgress() {
         const article = document.querySelector('.article-content');
         const scrolled = window.scrollY;
