@@ -128,13 +128,13 @@ section {
 
 /* Default cursor everywhere */
 body {
-  cursor: grab;
+  cursor: url('images/joker.jpeg'), auto;
 }
 
 /* When hovering over a link */
-a {
+/* a {
   cursor: grabbing;
-} 
+} */
   /* cursor: url('images/joker.jpeg'), auto; */
   
 
