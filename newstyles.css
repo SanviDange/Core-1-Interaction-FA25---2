@@ -104,6 +104,7 @@ h4 {
   font-size: 1rem;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
@@ -147,8 +148,8 @@ body {
 
 body{
 a.three:link {color:red;}
-a.three:visited {color:rgb(255, 196, 0);}
-a.three:hover {background:lightgreen;}
+a.three:visited {color:rgb(219, 168, 0);}
+a.three:hover {background:rgb(253, 253, 253);}
 }
 
 /*body{
@@ -179,7 +180,8 @@ main.two-column section {
   width: 220px;
   height: 300px;
   perspective: 1000px;
-  transform: rotate(45deg);
+  transform: none;
+  position: relative;
 }
 
 /* === indicates that inner side should be flipped === */
@@ -237,6 +239,15 @@ main.two-column section {
   text-align: center;
   padding: 0.3rem 0 0.3rem 0;
 }
+
+/* positioning */
+.flip-card.card1 { top: 40px; left: 40px; transform: rotate(-12deg); }
+.flip-card.card2 { top: 0px; left: 1000px; transform: rotate(8deg); }
+.flip-card.card3 { top: 30px; right: 5px; transform: rotate(15deg); }
+.flip-card.card4 { top: 0px; left: 200px; transform: rotate(-14deg); }
+.flip-card.card5 { top: 0px; left: 1100px; transform: rotate(6deg); }
+.flip-card.card6 { top: 0px; left: 2px; transform: rotate(5deg); }
+.flip-card.card7 { top: 0px; left: 1030px; transform: rotate(1deg); }
 
 /* === THREE COLUMN LAYOUT === */
 main.three-column {
@@ -312,19 +323,17 @@ main.photo-grid {
 }
 
 main.photo-grid .photo-item {
-  background-color: rgb(255, 255, 255);
-  padding: 1.5rem;
   text-align: center;
-  width: 240px;
-  height: 336px;
+  background-color:transparent);
   border-radius: 12px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.08);
+  padding: 2rem;
 }
 
 main.photo-grid .photo-item img {
   width: 100%;
-  height: 300px;
+  height: auto;
+  scale: 70%;
   object-fit: cover;
   margin: 0 0 1rem 0;
 }
