@@ -4,12 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../newstyles.css">
-    <title>Document</title>
+    <title>Bridge</title>
 </head>
+
 <body>
-    <main class="medium-style">
-      <section class="intro" style="text-align: center;">
-        <h1 style="font-size: 5rem;"> Bridge </h1>
-        <h3 style="color: var(--color-two);" >DIFFICULTY: ▲▲▲▲▲&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLAYERS: 2+</h4>
-         <p> In poker, players are dealt cards and take turns betting, checking, calling, raising, or folding based on how strong they THINK their hand is.</p> 
-      </section>
+   <main class="medium-style">
+    <section class="intro">
+      <h1 style="color: var(--color-secondary); font-size: 5rem;">Bridge</h1>
+      <h3 style="color: var(--color-two);">DIFFICULTY: ▲▲▲▲   NO.OF PLAYERS: 4 (2 partnerships)</h4>
+      <p>Bridge is a strategic trick-taking card game played by four players in two competing partnerships. Partners sit opposite each other and work together through bidding and card play to win tricks and fulfill their contract!</p> 
+   </section>
+   </main>
+
+
+  <!-- ACCORDION 1: COMMON TERMS -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>Common Terms</h2> </summary>
+        
+         <div class="accordion-content">
+          <main class="two-column">
+           <section>
+            <h3 style="background-color: #9b0000; fill-opacity: 0.1; border-radius: 0 20px 20px 20px; padding: 0.5rem 0.5rem; text-align: center; color: var(--color-accent);">Basic Play</h3>
+           <main class="photo-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); padding-top: 0;">
+           <div class="photo-item"> 
+            <h4>Trick</h4>
+             <p>A round of four cards, one played by each player. The highest card in the led suit (or the highest trump) wins the trick.</p>
+           </div> 
+           <div class="photo-item"> 
+             <h4>Trump</h4>
+             <p>The suit declared in the final contract that ranks higher than all other suits. A trump card beats any card from other suits.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Lead</h4>
+             <p>Playing the first card of a trick. Other players must follow suit if possible.</p>
+           </div> 
+           <div class="photo-item"> 
+             <h4>Dummy</h4>
+             <p>The partner of the declarer. After the opening lead, dummy places their cards face-up on the table for the declarer to play.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Declarer</h4>
+             <p>The player who first bid the suit (or no trump) of the final contract. This player controls both their own hand and dummy's hand.</p>
+           </div>
+            </section>
+    
+           <section>
+            <h3 style="background-color: #9b0000; fill-opacity: 0.1; border-radius: 0 20px 20px 20px; padding: 0.5rem 0.5rem; text-align: center; color: var(--color-accent);">Increased Difficulty</h3>
+           <main class="photo-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); padding-top: 0;">
+           
+            <div class="photo-item"> 
+             <h4>Bid</h4>
+              <p>A statement during the auction indicating how many tricks above six your partnership will take and which suit will be trump (or no trump).</p>
+            </div>
+            <div class="photo-item"> 
+            <h4>Contract</h4>
+             <p>The final bid that was not followed by three passes. It determines how many tricks the declaring partnership must win to succeed.</p>
+            </div>
+            <div class="photo-item">  
+             <h4>No Trump</h4>
+              <p>A contract played without a trump suit. The highest card in the suit led always wins the trick.</p>
+            </div>
+            <div class="photo-item">  
+             <h4>Overtricks</h4>
+              <p>Tricks won by the declarer beyond those required by the contract. These earn bonus points.</p>
+            </div>
+            <div class="photo-item">  
+             <h4>Undertricks</h4>
+              <p>When the declarer fails to make their contract, each trick short of the contract counts as an undertrick and gives points to the opponents.</p>
+            </div>           
+            </section>
+          </main>
+         </div>
+        </details>
+    </div>  
+
+    <!-- ACCORDION 2: GAME PLAY -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>GAME PLAY </h2></summary>
+         <h3 style="padding-left: 2rem;"> 🎴1. Deal → 💬 2. Auction → 🎯 3. Play → 🏆 4. Score</h3>
+         <div class="accordion-content">
+           <main class="medium-style">
+            
+      
+             <h4 style="color: var(--color-accent);">Setup</h4> 
+             <p>Four players sit in compass positions (North-South vs East-West). Deal all 52 cards clockwise, giving each player 13 cards. Partners sit across from each other.</p> 
+        
+             <h4 style="color: var(--color-accent);">The Auction</h4>
+             <p>
+              Starting with the dealer, players bid in clockwise order. Each bid must be higher than the previous bid (either more tricks or a higher-ranking suit). Players can also pass, double, or redouble. The auction ends when three consecutive players pass.
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">The Play</h4> 
+             <p>
+              The player to the left of the declarer makes the opening lead. Dummy then lays their cards face-up, organized by suit. The declarer plays cards from both their hand and dummy's hand. Players must follow suit if possible; if not, they may play any card. The highest card in the led suit (or highest trump) wins the trick. The winner of each trick leads the next.
+             </p>
+            
+             <h4 style="color: var(--color-accent);">Making the Contract</h4> 
+             <p>
+              The declaring partnership must win at least the number of tricks specified in their contract. Remember that bids are stated as tricks above six (a bid of "3 Hearts" means 9 total tricks).
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Winning</h4> 
+             <p>
+             If the declarer makes their contract, their partnership scores points. If they fail, the defending partnership scores points based on the number of undertricks. The first partnership to score 100 points "below the line" wins a game. Winning two games wins the rubber and awards bonus points.
+             </p> 
+           </main>
+         </div>
+        </details>
+    </div>
+
+    <!-- ACCORDION 3: SCORING -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>SCORING</h2> </summary>
+        
+         <div class="accordion-content">
+           <main class="medium-style">
+           
+            <ul style="color: var(--color-secondary);">
+            <li>Minor suits (Clubs ♣, Diamonds ♦) = 20 points per trick</li>
+            <li>Major suits (Hearts ♥, Spades ♠) = 30 points per trick</li>
+            <li>No Trump = 40 points for first trick, 30 for each additional</li>
+            <li>Small slam (12 tricks) = 500 bonus (not vulnerable) or 750 (vulnerable)</li>
+            <li>Grand slam (all 13 tricks) = 1000 bonus (not vulnerable) or 1500 (vulnerable)</li>
+            </ul> 
+            <br>
+
+            <h4 style="color: var(--color-accent);">Contract Points</h4> 
+            <p>Points for tricks bid and made are scored "below the line" and count toward winning a game. Only these points count toward the 100 needed for game.</p>
+            
+            <h4 style="color: var(--color-accent);">Bonus Points</h4>
+             <p>
+              Overtricks, slam bonuses, and doubled/redoubled contracts earn bonus points scored "above the line." Making a doubled contract also awards a 50-point bonus. Winning the rubber earns 500 points (for winning 2-0) or 300 points (for winning 2-1).
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Penalty Points</h4> 
+             <p>
+              If the contract fails, the defending side scores 50 points per undertrick when not vulnerable, or 100 points per undertrick when vulnerable. These penalties double if the contract was doubled, and double again if redoubled.
+             </p>
+             
+           </main>
+         </div>
+        </details>
+    </div>
+      
+
+</body>
+</html>

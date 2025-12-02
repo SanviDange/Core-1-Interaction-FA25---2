@@ -4,102 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../newstyles.css">
-    <title> Teen Patti</title>
+    <title>Teen Patti</title>
 </head>
 
 <body>
    <main class="medium-style">
     <section class="intro">
-      <h1 style="color: var(--color-secondary); font-size: 5rem;"> Teen Patti </h1>
-      <h3 style="color: var(--color-two);">DIFFICULTY: ▲▲▲  NO.OF PLAYERS: Dealer + 1+ </h4>
-      <p>Blackjack is a fast-paced casino card game where players compete against the dealer to get a hand value as close to 21 as possible without going over. You beat the dealer's hand to win!</p> 
-      <h2> Common Terms</h2>
+      <h1 style="color: var(--color-secondary); font-size: 5rem;">Teen Patti</h1>
+      <h3 style="color: var(--color-two);">DIFFICULTY: ▲▲   NO.OF PLAYERS: 3-7</h3>
+      <p>Teen Patti (meaning "three cards" in Hindi) is a popular Indian gambling card game similar to poker. Players compete to have the best three-card hand, with strategic betting and bluffing playing key roles in winning the pot!</p> 
    </section>
    </main>
 
-   <main class="two-column">
-    <section>
-      <h3 style="background-color: #bc923e; border-radius: 0 20px 20px 0; padding: 0.5rem 0.5rem;"> Basic Play</h3>
-       <h4> Hit</h4>
-       <p>When it’s your turn, ‘hitting’ means requesting for another card.</p>
-       <h4> Bust</h4>
-       <p>When the sum of your cards exceeds 21, you ‘bust’ i,e. you lose the round. </p>
-       <h4> Stand</h4>
-       <p>When you ‘stand’ or keep the hand you are dealt with and choose not to ‘hit’.</p>
-       <h4> Push</h4>
-       <p>When both, you and the dealer end the rounds with the same hand value, it's a tie. Your bet is ‘pushed’ or returned.</p>
-    </section>
-    
-    <section>
-      <h3 style="background-color: #bc923e; border-radius: 0 20px 20px 0; padding: 0.5rem 0.5rem;"> Increased Difficulty</h2>
-         <h4> Insurance</h4>
-         <p>If the dealer’s up-facing card is an ace, players will be given the ‘insurance’ option. If the dealer gets blackjack (ace + ten), then players who took insurance will receive a payout.</p>
-       
-         <h4> Split</h4>
-         <p>If you’re given two of the same cards as your starting hand, you can separate the pair and play two hands. You’ll need to double your wager.</p>
-       
-         <h4> Doubling</h4>
-         <p>After your second card is revealed, you’ll be given the option to ‘Double.’ This will double your wager, and you’ll be assigned one more card. After that card is assigned, you won’t have the option to hit. </p>
-    </section>
-   </main>
 
-   <main class="medium-style">
-      <h2> Game Play</h2>  
-        <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Setup: - </h4> 
-        <p>Deal 7 cards to each player. Place remaining cards face-down as the stock pile. Flip one card face-up to declare a 'joker' and another to start the discard pile.</p> 
+  <!-- ACCORDION 1: COMMON TERMS -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>Common Terms</h2> </summary>
         
-        <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Card Values: -</h4>
-         <p>
-         Number cards are worth their face value, face cards (J, Q, K) are worth 10, and Aces are worth 1 or 11.
-         </p> 
-            
-        <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Player Turns: - </h4> 
-         <p>
-         Starting from the dealer's left, each player decides to hit, stand, double down, or split. Continue hitting until you stand or bust.
-         </p>
-            
-        <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Dealer's Turn: - </h4> 
-         <p>
-         After all players finish, the dealer reveals their face-down card. The dealer must hit on 16 or less and stand on 17 or more.
-         </p> 
-            
-        <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Winning: - </h4> 
-         <p>
-         Beat the dealer by having a higher hand value without busting. Blackjack pays 3:2, regular wins pay 1:1. If you and the dealer tie, it's a push (bet returned).
-         </p> 
-   </main>
+         <div class="accordion-content">
+          <main class="medium-style">
+           <main class="photo-grid" style="padding-top: 0;">
+           <div class="photo-item"> 
+            <h4>Boot</h4>
+             <p>The minimum stake that each player must put into the pot before cards are dealt. This is the entry amount for the round.</p>
+           </div> 
+           <div class="photo-item"> 
+             <h4>Pot</h4>
+             <p>The total amount of money or chips in the center of the table. The winner of the round takes the entire pot.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Seen Player</h4>
+             <p>A player who has looked at their cards. Seen players must bet double the current stake to continue playing.</p>
+           </div> 
+           <div class="photo-item"> 
+             <h4>Blind Player</h4>
+             <p>A player who has not looked at their cards. Blind players can bet at the current stake rate and have strategic advantages.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Chaal</h4>
+             <p>A bet made by a seen player. The chaal must be at least double the current stake but cannot exceed four times the stake.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Show</h4>
+             <p>Requesting to compare cards with another player. This can only happen when two players remain, ending the round.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Sideshow</h4>
+             <p>A seen player can request to privately compare cards with the previous player (if that player is also seen). The previous player can accept or decline.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Pack/Fold</h4>
+             <p>Dropping out of the current round. The player surrenders their claim to the pot and loses any money already bet.</p>
+           </div>
+           </main>
+          </main>
+         </div>
+        </details>
+    </div>  
 
-<div class="accordion-container">
-  <details>
-    <summary>Common Terms</summary>
-    <div class="accordion-content">
-      <main class="two-column">
-       <section>
-        <h3 style="background-color: #bc923e; border-radius: 0 20px 20px 0; padding: 0.5rem 0.5rem;"> Basic Play</h3>
-         <h4> Hit</h4>
-         <p>When it’s your turn, ‘hitting’ means requesting for another card.</p>
-         <h4> Bust</h4>
-         <p>When the sum of your cards exceeds 21, you ‘bust’ i,e. you lose the round. </p>
-         <h4> Stand</h4>
-         <p>When you ‘stand’ or keep the hand you are dealt with and choose not to ‘hit’.</p>
-         <h4> Push</h4>
-         <p>When both, you and the dealer end the rounds with the same hand value, it's a tie. Your bet is ‘pushed’ or returned.</p>
-       </section>
-
-       <section>
-       <h3 style="background-color: #bc923e; border-radius: 0 20px 20px 0; padding: 0.5rem 0.5rem;"> Increased Difficulty</h2>
-         <h4> Insurance</h4>
-         <p>If the dealer’s up-facing card is an ace, players will be given the ‘insurance’ option. If the dealer gets blackjack (ace + ten), then players who took insurance will receive a payout.</p>
-       
-         <h4> Split</h4>
-         <p>If you’re given two of the same cards as your starting hand, you can separate the pair and play two hands. You’ll need to double your wager.</p>
-       
-         <h4> Doubling</h4>
-         <p>After your second card is revealed, you’ll be given the option to ‘Double.’ This will double your wager, and you’ll be assigned one more card. After that card is assigned, you won’t have the option to hit. </p>
-       </section>
+    <!-- ACCORDION 2: GAME PLAY -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>GAME PLAY</h2></summary>
+         <h3 style="padding-left: 2rem;">💰 1. Ante → 🎴 2. Deal → 🎲 3. Betting → 🏆 4. Showdown</h3>
+         <div class="accordion-content">
+           <main class="medium-style">
+            
+      
+             <h4 style="color: var(--color-accent);">Setup</h4> 
+             <p>Players sit in a circle and agree on the boot amount (minimum stake). Each player contributes the boot to the pot. A standard 52-card deck is used, with Aces ranking highest and 2s ranking lowest.</p> 
+        
+             <h4 style="color: var(--color-accent);">The Deal</h4>
+             <p>
+              The dealer distributes three cards face-down to each player, one at a time in clockwise order. Players can choose to look at their cards (becoming "seen") or play without looking (staying "blind").
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Betting Rounds</h4> 
+             <p>
+              Starting with the player to the dealer's left, players take turns betting. Blind players bet the current stake, while seen players must bet double. Players can bet, raise (up to 4x current stake), call for a sideshow (if applicable), request a show (when only two players remain), or fold. Betting continues until only one player remains or two players agree to a show.
+             </p>
+            
+             <h4 style="color: var(--color-accent);">Sideshow Rules</h4> 
+             <p>
+              A seen player can request a sideshow with the previous player if that player is also seen. The previous player can accept or decline. If accepted, both players privately compare hands, and the player with the weaker hand must fold. If the hands are equal, the player who requested the sideshow must fold.
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">The Showdown</h4> 
+             <p>
+             When only two players remain, either can pay for a show (blind players pay the current stake, seen players pay double). Both players reveal their cards, and the player with the better hand wins the pot. If both hands are equal, the player who did not pay for the show wins.
+             </p> 
+           </main>
+         </div>
+        </details>
     </div>
-  </details>
-</div>
+
+    <!-- ACCORDION 3: HAND RANKINGS -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>HAND RANKINGS</h2> </summary>
+        
+         <div class="accordion-content">
+           <main class="medium-style">
+           
+            <p>Hands are ranked from highest to lowest:</p>
+            <ul style="color: var(--color-secondary);">
+            <li><strong>Trail (Three of a Kind)</strong> - Three cards of the same rank (e.g., A♠ A♥ A♦). A-A-A is the best trail.</li>
+            <li><strong>Pure Sequence (Straight Flush)</strong> - Three consecutive cards of the same suit (e.g., K♥ Q♥ J♥). A-K-Q is the best sequence.</li>
+            <li><strong>Sequence (Straight)</strong> - Three consecutive cards not all in the same suit (e.g., K♥ Q♠ J♦).</li>
+            <li><strong>Color (Flush)</strong> - Three cards of the same suit that are not in sequence (e.g., A♠ K♠ 9♠).</li>
+            <li><strong>Pair</strong> - Two cards of the same rank (e.g., K♥ K♠ 5♦). A-A-K is the best pair.</li>
+            <li><strong>High Card</strong> - None of the above. The hand with the highest card wins (e.g., A♥ J♠ 9♦).</li>
+            </ul> 
+            <br>
+
+            <h4 style="color: var(--color-accent);">Comparing Hands</h4> 
+            <p>When hands are of the same type, compare the highest card. For trails and pairs, compare the rank of the matching cards first. For sequences, A-K-Q is highest, then K-Q-J, down to 4-3-2, with A-2-3 being the lowest sequence.</p>
+            
+            <h4 style="color: var(--color-accent);">Winning Strategies</h4>
+             <p>
+              Playing blind can be advantageous as you bet half the amount of seen players. Bluffing is crucial—you can win with weak hands if opponents fold. Watch betting patterns and know when to fold to minimize losses. Sideshow requests can help eliminate opponents before the final showdown.
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Variations</h4> 
+             <p>
+              Many regional variations exist, including Muflis (lowest hand wins), AK47 (A, K, 4, and 7 are wild cards), and Best of Four (deal four cards, play with best three). House rules should be agreed upon before starting.
+             </p>
+             
+           </main>
+         </div>
+        </details>
+    </div>
       
 
 </body>

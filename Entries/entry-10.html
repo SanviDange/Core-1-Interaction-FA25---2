@@ -4,12 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../newstyles.css">
-    <title>Document</title>
+    <title>Canasta</title>
 </head>
+
 <body>
-    <main class="medium-style">
-      <section class="intro" style="text-align: center;">
-        <h1 style="font-size: 5rem;"> Canasta </h1>
-        <h3 style="color: var(--color-two);" >DIFFICULTY: ▲▲▲▲▲&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLAYERS: 2+</h4>
-         <p> In poker, players are dealt cards and take turns betting, checking, calling, raising, or folding based on how strong they THINK their hand is.</p> 
-      </section>
+   <main class="medium-style">
+    <section class="intro">
+      <h1 style="color: var(--color-secondary); font-size: 5rem;">Canasta</h1>
+      <h3 style="color: var(--color-two);">DIFFICULTY: ▲▲▲   NO.OF PLAYERS: 2-6 (best with 4)</h3>
+      <p>Canasta is a strategic rummy-type card game where players work to create melds of seven or more cards. The game combines elements of skill, strategy, and luck as partnerships compete to score points through melds, canastas, and going out!</p> 
+   </section>
+   </main>
+
+
+  <!-- ACCORDION 1: COMMON TERMS -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>Common Terms</h2> </summary>
+        
+         <div class="accordion-content">
+          <main class="medium-style">
+           <main class="photo-grid" style="padding-top: 0;padding-left: 0;">
+           <div class="photo-item"> 
+            <h4>Meld</h4>
+             <p>A set of three or more cards of the same rank laid face-up on the table. Melds can be added to throughout the game.</p>
+           </div> 
+           <div class="photo-item"> 
+             <h4>Canasta</h4>
+             <p>A meld of seven or more cards. Natural canastas (no wild cards) score 500 points, while mixed canastas (with wild cards) score 300 points.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Wild Cards</h4>
+             <p>Jokers and 2s that can be used as any rank in melds. Jokers are worth 50 points each, and 2s are worth 20 points each.</p>
+           </div> 
+           <div class="photo-item"> 
+             <h4>Red Three</h4>
+             <p>Special bonus cards worth 100 points each (or 200 if you have all four). They must be placed face-up immediately and replaced from the stock.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Black Three</h4>
+             <p>Cards that can only be melded when going out. They primarily serve to block the discard pile from being picked up.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Discard Pile</h4>
+             <p>Face-up pile where players discard cards. Can be picked up if the top card can be melded with cards from your hand.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Frozen Pile</h4>
+             <p>A discard pile that can only be taken by melding the top card with a natural pair from your hand. Created by discarding a wild card or black three.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Going Out</h4>
+             <p>Playing all cards from your hand, ending the round. Requires at least one canasta and may require partner's permission.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Initial Meld</h4>
+             <p>The first meld made by a partnership in a hand. Must meet a minimum point requirement based on your team's current score.</p>
+           </div>
+           <div class="photo-item"> 
+             <h4>Stock Pile</h4>
+             <p>The face-down draw pile. Players draw from here when they don't take the discard pile.</p>
+           </div>
+           </main>
+          </main>
+         </div>
+        </details>
+    </div>  
+
+    <!-- ACCORDION 2: GAME PLAY -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>GAME PLAY</h2></summary>
+         <h3 style="padding-left: 2rem;">🎴 1. Deal → 🃏 2. Draw → 📋 3. Meld → 🗑️ 4. Discard</h3>
+         <div class="accordion-content">
+           <main class="medium-style">
+            
+      
+             <h4 style="color: var(--color-accent);">Setup</h4> 
+             <p>Use two standard 52-card decks plus four jokers (108 cards total). For four players, partners sit opposite each other. Deal 11 cards to each player (15 cards in a two-player game). Place the remaining cards face-down as the stock pile, then flip the top card to start the discard pile.</p> 
+        
+             <h4 style="color: var(--color-accent);">Red Threes</h4>
+             <p>
+              If dealt any red threes, immediately place them face-up in front of you and draw replacement cards from the stock. If you draw a red three during play, place it face-up and draw a replacement at the end of your turn.
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Taking Your Turn</h4> 
+             <p>
+              On your turn, draw two cards from the stock pile OR take the entire discard pile (if able). If taking the discard pile, you must immediately meld the top card with at least two natural cards from your hand. Then, you may lay down melds or add cards to existing melds. Finally, discard one card to end your turn. You must always have at least one card to discard.
+             </p>
+            
+             <h4 style="color: var(--color-accent);">Making Melds</h4> 
+             <p>
+              Melds must contain at least three cards of the same rank. Natural cards are required—you need at least two natural cards to start a meld. Wild cards can be added but cannot outnumber natural cards in a meld. Your first meld must meet the minimum point requirement: negative score requires 15 points, 0-1495 requires 50 points, 1500-2995 requires 90 points, and 3000+ requires 120 points.
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Going Out</h4> 
+             <p>
+             To go out, you must have at least one canasta and be able to play all remaining cards from your hand (except your final discard). You may ask your partner "May I go out?" before doing so—their answer is binding. Going out earns 100 bonus points. The hand ends immediately when someone goes out.
+             </p>
+             
+             <h4 style="color: var(--color-accent);">Frozen Pile Rules</h4> 
+             <p>
+             The discard pile becomes frozen when a wild card or black three is discarded. While frozen, you can only take the pile by using two natural cards from your hand that match the top card. The pile also starts frozen for each partnership until they make their initial meld.
+             </p> 
+           </main>
+         </div>
+        </details>
+    </div>
+
+    <!-- ACCORDION 3: SCORING -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";>SCORING</h2> </summary>
+        
+         <div class="accordion-content">
+           <main class="medium-style">
+           
+            <h4 style="color: var(--color-accent);">Card Values</h4>
+            <ul style="color: var(--color-secondary);">
+            <li>Jokers = 50 points each</li>
+            <li>2s (wild cards) = 20 points each</li>
+            <li>Aces = 20 points each</li>
+            <li>8s through Kings = 10 points each</li>
+            <li>4s through 7s = 5 points each</li>
+            <li>Black 3s = 5 points each</li>
+            </ul> 
+            <br>
+
+            <h4 style="color: var(--color-accent);">Bonus Points</h4> 
+            <p>Natural canasta (no wild cards) = 500 points. Mixed canasta (with wild cards) = 300 points. Each red three = 100 points (or 200 points each if you have all four). Going out = 100 points. Going out concealed (entire hand melded at once with no previous melds) = 200 points instead of 100.</p>
+            
+            <h4 style="color: var(--color-accent);">Calculating Score</h4>
+             <p>
+              At the end of each hand, add up all melded cards, canasta bonuses, red three bonuses, and going out bonus. Then subtract the point value of any cards remaining in hand. If your partnership has not made any melds, red threes count as negative points instead of positive.
+             </p> 
+            
+             <h4 style="color: var(--color-accent);">Winning the Game</h4> 
+             <p>
+              The game continues until one partnership reaches 5,000 points. The partnership with the highest score at that point wins. Some variations play to 8,500 or 10,000 points for longer games.
+             </p>
+             
+           </main>
+         </div>
+        </details>
+    </div>
+      
+
+</body>
+</html>
