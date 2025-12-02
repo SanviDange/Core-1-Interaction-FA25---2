@@ -6,39 +6,46 @@
     <link rel="stylesheet" href="../newstyles.css">
     <title>Rummy</title>
 </head>
+
+
 <body>
+
+    <!-- INTRO SECTION -->
     <main class="medium-style">
-      <section class="intro" style="text-align: center;">
+      <section class="intro" style="text-align: left;">
         <h1 style="font-size: 5rem;padding-top: 3rem;"> Rummy </h1>
         <h3 style="color: var(--color-two);" >DIFFICULTY: ▲▲▲&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PLAYERS: 2+</h4>
          <p> Rummy is a classic card-matching game where 2 or more players aim to form sets and sequences by drawing and discarding cards. The goal is to be the first to arrange all your cards into valid combinations and declare your hand.</p> 
       </section>
     </main>
       
-      <div class="accordion-container">
-        <details>
-         <summary> <h2 style="text-align: center; padding-top: 3rem";> Common Terms</h2> </summary>
-        <div class="accordion-content">
-         
+     <!-- ACCORDION 1: COMMON TERMS -->
+      <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> 
+          <h2 style="text-align: left; padding-top: 3rem";> Common Terms</h2> 
+         </summary>
+        
+         <div class="accordion-content" style="padding-left:0;">
           <main class="photo-grid">
 
           <div class="photo-item">
-           <h4>Draw</h4>
+           <h4>DRAW</h4>
            <p>When you take a card from the stock pile or discard pile.</p>
           </div>
 
           <div class="photo-item">
-           <h4>Discard</h4>
+           <h4>DISCARD</h4>
            <p>When you place an unwanted card face-up on the discard pile.</p>
           </div>
           
           <div class="photo-item">
-           <h4>Discard Pile</h4>
+           <h4>DISCARD PILE</h4>
            <p>Face-up pile where all players discard cards.</p>
           </div>
 
           <div class="photo-item">
-           <h4>A Sequence</h4>
+           <h4>A SEQUENCE</h4>
            <p>Three or more consecutive cards of the same suit (e.g., 5♥ 6♥ 7♥)
            <img src="../images/rummy-pure-seq.png" alt="Rummy Pure Seq" style="padding-top: 1rem;">
            <p class="photo-caption"> <span style="color: var(--color-accent);"> Pure Sequence - </span> 
@@ -46,60 +53,62 @@
            </p>
           </div>
 
-          <div class="photo-item">
-           <h4>A Set/Series/Group</h4>
+          <div class="photo-item last-one">
+           <h4>A SET/SERIES/GROUP</h4>
            <p>Three or four cards of the same rank but different suits (e.g., 9♠ 9♥ 9♦).</p>
            <img src="../images/rummy-pure-set.png" alt="Rummy Pure Set">
            <p class="photo-caption"> <span style="color: var(--color-accent);"> Pure Set - </span>
             A series that doesn't use a joker or wild card.
            </p>
-          </div>
-
-          <div class="photo-item" style="padding-top: 6.8rem;">
+   
            <img src="../images/rummy-impure-set.png" alt="Rummy Imure Set">
            <p class="photo-caption"> <span style="color: var(--color-accent);"> Impure Set - </span>
             A series that uses a joker or wild card as a substitute. 
            </p>
           </div>
-          </main>
-          </details>
-          </div>
-      </div>
-      </section>
 
-    </main>
+          </main>
+          </div>
+        </details>
+      </div>
     
-    <div class="accordion-container">
-        <details>
-         <summary> <h2 style="text-align: center; padding-top: 0rem";> Game Play</h2> </summary>
+
+    <!-- ACCORDION 2: GAMEPLAY -->
+    <div class="accordion-container" style="padding-left: 2.5rem;">
+        <details open>
+         <summary> <h2 style="text-align: left; padding-top: 0rem";> Game Play</h2> </summary>
         <div class="accordion-content">
 
-    <main class="medium-style" style="text-align: center";>
-      <h2> Game Play</h2>
-      
-            <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Setup: - </h4> 
+          <main class="medium-style" style="text-align: left; padding-left: 0;";>
+
+            <h4 style="color: var(--color-accent); font-size:1.1rem"> SETUP </h4> 
             <p>Deal 7 cards to each player. Place remaining cards face-down as the stock pile. Flip one card face-up to declare a 'joker' and another to start the discard pile.</p> 
         
-            <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Taking Turns: -</h4>
+            <h4 style="color: var(--color-accent); font-size:1.1rem"> TAKING TURNS </h4> 
             <p>
             On your turn (typically table moves clockwise), draw one card from either the stock pile or discard pile, then discard one card face-up. 
             At the end of each round you should have no-more or no-less than 7 cards in hand. 
-           </p> 
-            <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Forming Combinations: - </h4> 
+            </p> 
+           
+            <h4 style="color: var(--color-accent); font-size:1.1rem"> FORMING COMBINATIONS </h4>  
             <p>
             Arrange your cards into valid sequences and sets. You must have at least one pure sequence to declare.
             </p>
-            <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Declaring: - </h4> 
+
+            <h4 style="color: var(--color-accent); font-size:1.1rem"> DECLARING </h4>  
             <p>
               When all your cards form valid combinations, discard your final card and declare. Other players reveal their hands and calculate points for unmatched cards.
             </p> 
-            <h4 style="color: var(--color-accent); font-style:italic; font-size:medium;"> Winning: - </h4> 
+
+            <h4 style="color: var(--color-accent); font-size:1.1rem"> WINNING </h4> 
             <p>
               The player who declares first wins the round. Points are tallied based on unmatched cards in opponents' hands.
             </p> 
 
-
-    </main>
+          </main>
+        </div>
+        </details>
+    </div>
 
 </body>
 </html>
