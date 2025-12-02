@@ -359,6 +359,54 @@ main.medium-style img {
   margin: 2rem 0;
 }
 
+/* === MARQUEE === */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: var(--color-secondary);
+  border-top: 1px solid #c49b86;
+  border-bottom: 1px solid #c49b86;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 1.5rem;
+  align-items: center;
+  animation: scroll 40s linear infinite;
+}
+
+.marquee-content a {
+  text-decoration: none;
+  color: var(--color-base);
+  font-family: serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.marquee-content a:hover {
+  text-decoration: underline;
+}
+
+.marquee-content span {
+  color: var(--color-accent);
+  opacity: 0.8;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 /* === PHOTO GRID LAYOUT === */
 main.photo-grid {
   display: grid;
